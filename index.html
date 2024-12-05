@@ -2,27 +2,29 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <!-- <input type="text" id="myInput" value="" />
-      <button id="getValueBtn">Get</button> -->
-      <div class="sum">
-        <div style="padding-bottom: 15px;">
-          <label for="num1">Введите первое число:</label>
-          <input type="number" id="num1" value="" />
-        </div>
+      <div class="container">
+        <label for="num1">Введите первое число:</label>
+        <input class="input-field" type="number" id="num1" value="" />
 
-        <div style="padding-bottom: 15px;">
-          <label for="num2"> Введите второе число:</label>
-          <input type="number" id="num2" value="" />
-        </div>
+        <label for="num2"> Введите второе число:</label>
+        <input class="input-field" type="number" id="num2" value="" />
 
-        <div style="padding-bottom: 15px;">
         <button id="calculateBtn" class="button">Посчитать сумму</button>
-        </div>
+
+        <label for="result">Результат:</label>
+        <input type="text" id="result" class="result-field" readonly />
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
 
         <div style="padding-bottom: 15px;">
         <label for="result">Результат:</label>
